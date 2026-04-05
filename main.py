@@ -5,7 +5,7 @@ load_dotenv()
 api_key = os.environ.get("GEMINI_API_KEY")
 
 def main():
-    if api_key == None:
+    if api_key is None:
         raise RuntimeError("Missing Gemini API Key")
     print("Hello from ai-agent!")
 
